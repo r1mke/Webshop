@@ -15,6 +15,10 @@ const Cart = () => {
     navigate(`/product/${id}`);
   };
 
+  const goToPayment = () =>{
+    navigate('/payment');
+  }
+
   return (
     <div className="Cart">
       {<GoBack />}
@@ -78,7 +82,7 @@ const Cart = () => {
         {
           Object.keys(cartItems)!==0 ? (
             <div className="payment-button">
-          <button id="paymentbutton">Proceed to checkout</button>
+          <button onClick={goToPayment} id="paymentbutton">Proceed to checkout</button>
           <p>Your cart: ${cartTotal()}</p>
         </div>
           ) : (<></>)
