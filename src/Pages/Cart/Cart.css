@@ -1,0 +1,313 @@
+
+
+.cart-header h2{
+    font-size: 2.5vw;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.cart-header{
+    margin: 10vh 0;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.empty-cart{
+    font-size: 1vw;
+    margin-bottom: 5vh;
+}
+
+.cart-items{
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 5vw;
+    font-size: 1vw;
+    align-items: center;
+    border: 2px solid #110F10;
+    margin-bottom: 5vh;
+}
+
+.cart-item img{
+    width: 5vw;
+    cursor: pointer;
+}
+
+.cart-item-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    text-align: center;
+    width: 25%;
+    font-size: 1vw;
+}
+
+.cart-item-right{
+    align-items: center;
+    width: 25%;
+}
+
+.quantity-control{
+    width: 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    align-items: center;
+    font-size: 1.3vw;
+    width: 25%;
+}
+
+.sign{
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+
+.quantity{
+    border: 0.1vw solid #110F10;
+    padding: 1vh;
+}
+
+.button-delete{
+    margin-bottom: 0%;
+    width: 20%;
+    padding: 1vh 0;
+    border: none;
+    background-color: #CEF196;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+
+.payment-button{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+}
+
+#paymentbutton{
+    margin-bottom: 0%;
+    width: 30%;
+    padding: 1vh 0;
+    border: none;
+    background-color: #CEF196;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1vw;
+    text-transform: uppercase;
+}
+
+
+@media(max-width:1200px){
+    .cart-item-left img{
+        width: 7vw;
+    }
+
+    .cart-item-left span{
+        font-size: 1.5vw;
+    }
+
+    .quantity-control .sign{
+        font-size: 1.5vw;
+    }
+
+    .quantity-control .quantity{
+        font-size: 1.5vw;
+    }
+
+    .cart-item-right span{
+        font-size: 1.3vw;
+    }
+}
+
+
+@media(max-width:960px){
+
+    .cart-header h2{
+        font-size: 3vw;
+    }
+
+    .cart-item{
+        flex-direction: column;
+        gap: 5vh;
+        border: none;
+        border-bottom: 0.3vw solid #110F10;
+    }
+
+    .cart-item-left img{
+        width: 10vw;
+    }
+
+    .cart-item-left span{
+        font-size: 2vw;
+    }
+
+    .quantity-control .sign{
+        font-size: 2vw;
+    }
+
+    .quantity-control .quantity{
+        font-size: 2vw;
+    }
+
+    .cart-item-right span{
+        font-size: 2vw;
+    }
+
+    .button-delete{
+        width: 30%;
+        font-size: 1.5vw;
+    }
+
+    #paymentbutton{
+        padding: 1vw;
+    }
+
+    .empty-cart p{
+        font-size: 1.5vw;
+    }
+}
+
+@media(max-width:770px){
+
+    .cart-header h2{
+        font-size: 3.5vw;
+    }
+
+    .cart-item-left img{
+        width: 15vw;
+    }
+    #paymentbutton{
+        font-size: 1.5vw;
+    }
+
+    .empty-cart p{
+        font-size: 2vw;
+    }
+
+}
+
+@media(max-width:550px){
+
+    .cart-header h2{
+        font-size: 4vw;
+    }
+
+    .cart-item-left img{
+        width: 20vw;
+    }
+
+    .cart-item-left span{
+        font-size: 2.5vw;
+    }
+
+    .quantity-control .sign{
+        font-size: 2.5vw;
+    }
+
+    .quantity-control .quantity{
+        font-size: 2.5vw;
+    }
+
+    .cart-item-right span{
+        font-size: 2.5vw;
+    }
+
+    .button-delete{
+        width: 30%;
+        font-size: 2vw;
+    }
+    #paymentbutton{
+        font-size: 2vw;
+    }
+
+    .empty-cart p{
+        font-size: 3vw;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .cart-item-left img{
+        width: 25vw;
+    }
+
+    .cart-item-left span{
+        font-size: 3vw;
+    }
+
+    .quantity-control .sign{
+        font-size: 3vw;
+    }
+
+    .quantity-control .quantity{
+        font-size: 3vw;
+    }
+
+    .cart-item-right span{
+        font-size: 3vw;
+    }
+
+    .button-delete{
+        width: 30%;
+        font-size: 2.5vw;
+    }
+    #paymentbutton{
+        font-size: 2vw;
+    }
+
+    .empty-cart p{
+        font-size: 2.5vw;
+    }
+
+}
+
+@media(max-width:400px){
+
+    .cart-item-left img{
+        width: 30vw;
+    }
+
+    .cart-item-left span{
+        font-size: 4vw;
+    }
+
+    .quantity-control .sign{
+        font-size: 4vw;
+    }
+
+    .quantity-control .quantity{
+        font-size: 4vw;
+    }
+
+    .cart-item-right span{
+        font-size: 4vw;
+    }
+
+    .button-delete{
+        width: 30%;
+        font-size: 3vw;
+    }
+
+    #paymentbutton{
+        font-size: 2.5vw;
+    }
+
+    .empty-cart p{
+        font-size: 3vw;
+    }
+
+}

@@ -1,0 +1,160 @@
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #110f10;
+  padding: 3vh 0;
+  align-items: center;
+}
+
+.openMenu{
+  display: none;
+  z-index: 100;
+}
+
+.navbar a {
+  width: 15%;
+}
+
+#navbar-logo {
+  width: 10vw;
+  height: 6vh;
+  cursor: pointer;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+
+.navbar-right-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #cef196;
+  font-size: 12px;
+  text-transform: uppercase;
+  gap: 1vh;
+  cursor: pointer;
+}
+
+.navbar-right-icon span {
+  color: #cef196;
+  font-size: 0.8vw;
+}
+
+.navbar-right-icon img {
+  width: 2vw;
+}
+
+@media (max-width: 1200px) {
+  #navbar-logo {
+    width: 20vw;
+    height: 3vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar-right-icon span {
+    font-size: 1vw;
+  }
+
+  .navbar-right-icon img {
+    width: 2.5vw;
+  }
+}
+
+@media (max-width:960px){
+  .navbar{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 10vh;
+  }
+
+  .hidden{
+    display: none;
+  }
+
+  #navbar-logo{
+    width: 20vw;
+    height: 5vw;
+  }
+
+  .navbar-right{
+    position: absolute;
+    right: 5vw;
+    margin-left: 5%;
+    
+  }
+
+  
+
+
+  .openMenu{
+    display: block;
+    width: 2vw;
+    position: absolute;
+    left: 5vw;
+  }
+
+}
+
+
+@media (max-width:770px){
+  .openMenu{
+    width: 3vw;
+  }
+
+  .navbar-right-icon img{
+    width: 3vw;
+  }
+
+  .navbar-right-icon span{
+    font-size: 1.3vw;
+  }
+
+  #navbar-logo {
+    width: 23vw;
+    height: 5vw;
+  }
+}
+
+@media (max-width:550px){
+  .openMenu{
+    width: 3.5vw;
+  }
+
+  .navbar-right-icon img{
+    width: 5vw;
+  }
+
+  .navbar-right-icon span{
+    font-size: 1.5vw;
+  }
+
+  #navbar-logo {
+    width: 20vw;
+    height: 5vw;
+  }
+}
+
+@media (max-width:480px){
+  .openMenu{
+    width: 4vw;
+  }
+
+  #navbar-logo {
+    width: 30vw;
+    height: 5vw;
+  }
+
+  .navbar-right-icon img{
+    width: 7vw;
+  }
+
+  .navbar-right-icon span{
+    font-size: 2vw;
+  }
+
+}

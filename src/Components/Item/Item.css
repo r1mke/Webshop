@@ -1,0 +1,137 @@
+.item{
+    width: 15vw;
+    border-radius: 1.2rem;
+    background-color: white;
+    animation: fadeIn 1s;
+    font-size: 1.2vw;
+}
+
+.item-container{
+    padding: 1vw;
+}
+
+.item-container img{
+    width: 80%;
+    cursor: pointer;
+}
+
+.item-container img:hover{
+    animation: pulse;
+    animation-duration: 1s;
+}
+
+.item-info{
+    display: flex;
+    justify-content: space-between;
+    margin:20px 0;
+}
+
+#button-view-details{
+    margin-bottom: 0%;
+    width: 100%;
+    padding: 1vh 0;
+    border: none;
+    background-color: #CEF196;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+#button-view-details:hover{
+    background-color: #110F10;
+    color: #CEF196;
+    transition: 0.5s;
+}
+
+.phone-model{
+    font-weight: 500;
+}
+
+@media (max-width: 993px){
+    .item{
+        width: 20vw;
+    }
+
+    .item-container{
+        padding: 2vw;
+    }
+
+    .item-container img{
+        width: 70%;
+    }
+
+    .item-info p{
+        font-size: 1.5vw;
+    }
+
+    .phone-model{
+        font-size: 1.7vw;
+    }
+}
+
+@media (max-width:960px){
+
+    #button-view-details{
+        font-size: 1.3vw;
+    }
+}
+
+@media (max-width:770px){
+
+    .item{
+        width: 35vw;
+    }
+
+    .item-info p{
+        font-size: 2vw;
+    }
+
+    .phone-model{
+        font-size: 2vw;
+    }
+
+    #button-view-details{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width:550px){
+
+    .item{
+        width: 40vw;
+    }
+
+    .item-info p{
+        font-size: 2.5vw;
+    }
+
+    .phone-model{
+        font-size: 2.5vw;
+    }
+
+    #button-view-details{
+        font-size: 2vw;
+    }
+}
+
+@media (max-width:480px){
+
+    .item{
+        width: 50vw;
+    }
+
+    .item-info p{
+        font-size: 3vw;
+    }
+
+    .phone-model{
+        font-size: 3vw;
+    }
+
+    #button-view-details{
+        font-size: 2.5vw;
+    }
+}
+
+
+

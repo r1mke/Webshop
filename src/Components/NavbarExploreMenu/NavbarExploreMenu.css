@@ -1,0 +1,155 @@
+.navbarExploreMenu{
+    background-color: #110F10;
+    padding: 3vh 0;
+    margin-bottom: 10vh;
+}
+
+
+.navbarExploreMenu-list ul{
+list-style: none;
+width: 100%;
+text-align: center;
+
+}
+
+.navbarExploreMenu-list ul li{
+    display: inline-block;
+    margin-right: 5%;
+    width: 10%;
+}
+
+.navbarExploreMenu-list ul li a{
+    padding: 2vh;
+    display: block;
+    color: #F5F1F0;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 1vw;
+}
+
+.navbarExploreMenu-list ul li:last-child{
+    margin-right: 0%;
+}
+
+.dropdown a:hover{
+    color: #F5F1F0;
+    transition: 0.5s;
+}
+
+.dropdown:hover .dropdown-menu li{
+    transition: 0.5s;
+    display: block;
+    padding: 3vh 1vh ;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1vw;
+
+}
+
+.dropdown-menu li:hover{
+    background: #F5F1F0;
+    color: #110F10;
+}
+
+.dropdown{
+    position: relative;
+    color: #F5F1F0;
+}
+
+.dropdown-menu{
+    position: absolute;
+    display: none;
+    width: 100%;
+    z-index: 1;
+    background-color: #110F10;
+}
+
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    
+}
+
+@media (max-width:1200px){
+    .navbarExploreMenu-list ul li{
+        margin-right: 2%;
+        width: 15%;
+    }
+}
+
+@media (max-width:1000px){
+    .navbarExploreMenu-list ul li a{
+        padding: 2vh;
+        font-size: 1.2vw;
+    }
+}
+
+@media(max-width:960px){
+    .navbarExploreMenu{
+        width: 15vw;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin-bottom: 0;
+        padding-top: 15vh;
+        display: none;
+    }
+
+
+    .navbarExploreMenu.active{
+        display: block;
+       
+    }
+
+    .navbarExploreMenu-list ul li{
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .navbarExploreMenu-list ul li a:hover{
+        background: #F5F1F0;
+        color: #110F10;
+    }
+
+    .dropdown:hover .dropdown-menu li{
+        display: none;
+    }
+}
+
+@media(max-width:770px){
+
+    .navbarExploreMenu{
+        width: 20vw;
+    }
+
+    .navbarExploreMenu-list ul li a{
+        font-size: 1.5vw;
+    }
+
+}
+
+@media(max-width:550px){
+
+    .navbarExploreMenu{
+        width: 25vw;
+    }
+
+    .navbarExploreMenu-list ul li a{
+        font-size: 2vw;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .navbarExploreMenu{
+        width: 35vw;
+    }
+
+    .navbarExploreMenu-list ul li a{
+        font-size: 2.5vw;
+    }
+
+}
