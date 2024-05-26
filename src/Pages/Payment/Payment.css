@@ -98,11 +98,23 @@ margin-bottom: 2vw;
 @media(max-width:960px){
     .payment-container{
         flex-direction:column-reverse;
-        gap: 5vh;
+        gap: 7vh;
+        margin-bottom: 5vw;
+    }
 
+    .basic-info{
+        flex-direction: column;
+    }
+
+    .basic-info .info{
+        width: 100%;
     }
 
     .payment-right{
+        width: 100%;
+    }
+
+    .payment-left{
         width: 100%;
     }
 }
@@ -119,6 +131,7 @@ margin-bottom: 2vw;
 
     .info input{
         font-size: 1.5vw;
+        padding: 5px;
     }
 
     .payment-right h3{
@@ -134,33 +147,7 @@ margin-bottom: 2vw;
     }
 }
 
-@media(max-width:550px){
-    
-    .payment-left h2{
-        font-size: 3vw;
-    }
 
-    .info label{
-        font-size: 2vw;
-    }
-
-    .info input{
-        font-size: 2vw;
-    }
-
-    .payment-right h3{
-        font-size: 2.2vw;
-        padding: 0.5vw;
-    }
-
-    .cart-summary{
-        padding: 1.2vw;
-    }
-
-    .summary-info p{
-        font-size: 2vw;
-    }
-}
 
 @media(max-width:550px){
     
@@ -174,6 +161,7 @@ margin-bottom: 2vw;
 
     .info input{
         font-size: 2.5vw;
+        padding: 10px;
     }
 
     .payment-right h3{

@@ -25,6 +25,12 @@ import close from './close.png'
 import arrow from './arrow.png'
 import arrowRight from './arrowRight.png'
 import open_menu from './more.png'
+import tablet_1 from './XiaomiRedmiPadSE.png'
+import tablet_2 from './SamsungTabA9Plus.png'
+import tablet_3 from './IpadPro11.png'
+import watch_1 from './AppleWatch9Gps.png'
+import watch_2 from './AppleWatchUltra2.png'
+import watch_3 from './CanyonSmartwatch.png'
 
 export const assets = {
     phone_1,
@@ -53,7 +59,10 @@ export const assets = {
     close,
     arrow,
     arrowRight,
-    open_menu
+    open_menu,
+    tablet_1,
+    tablet_2,
+    tablet_3
 };
 
 
@@ -249,6 +258,80 @@ export const mobile_list = [
       },
       category: "phone",
       image: phone_16
+    },
+    {
+      id: 17,
+      name: "Samsung Galaxy Tab A9 Plus",
+      brand: "Samsung",
+      model: "Tab A9 Plus",
+      price: 999,
+      description: {
+        /* Add the specifications */
+      },
+      category: "tablets",
+      image: tablet_2
+    },
+    {
+      id: 18,
+      name: "Xiaomi Redmi Pad SE",
+      brand: "Xiaomi",
+      model: "Redmi Pad SE",
+      price: 699,
+      description: {
+        /* Add the specifications */
+      },
+      category: "tablets",
+      image: tablet_1
+    },
+    {
+      id: 19,
+      name: "Apple Ipad Pro 11",
+      brand: "Apple",
+      model: "Ipad Pro 11",
+      price: 1499,
+      description: {
+        /* Add the specifications */
+      },
+      category: "tablets",
+      image: tablet_3
+    },
+    ,
+    {
+      id: 20,
+      name: "Apple Watch 9 Gps 41mm",
+      brand: "Apple",
+      model: "Watch 9 Gps 41mm",
+      price: 799,
+      description: {
+        /* Add the specifications */
+      },
+      category: "watches",
+      image: watch_1
+    },
+    {
+      id: 21,
+      name: "Apple Watch Ultra 2",
+      brand: "Apple",
+      model: "Watch Ultra 2 49mm",
+      price: 1109,
+      description: {
+        /* Add the specifications */
+      },
+      category: "watches",
+      image: watch_2
+    },
+
+    {
+      id: 22,
+      name: "Canyon Smartwatch Badian SW-68",
+      brand: "Canyon",
+      model: "Smartwatch Badian SW-68",
+      price: 50,
+      description: {
+        /* Add the specifications */
+      },
+      category: "watches",
+      image: watch_3
     }
   ];
   
@@ -261,12 +344,12 @@ export const menu_list = [
     },
     {
         name: "Tablets",
-        models: ["Samsung", "Apple"],
+        models: ["Samsung", "Apple","Xiaomi"],
         category: "tablets"
     },
     {
         name: "Watches",
-        models: ["Samsung", "Apple", "Huawei"],
+        models: ["Samsung", "Apple", "Canyon"],
         category: "watches"
     },
     {

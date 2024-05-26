@@ -12,7 +12,7 @@ const ExploreProducts = () => {
       <h2>{title}</h2>
       <div className="products">
         {mobile_list.map((item, index) => {
-          if (category === "All" || item.category === category) {
+          if (item.category === category) {
             if (model !== "") {
               if (model === item.brand) {
                 return (

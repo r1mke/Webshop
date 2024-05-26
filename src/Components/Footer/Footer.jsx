@@ -1,15 +1,30 @@
 import React from 'react'
 import './Footer.css'
 import { assets, menu_list } from '../../assets/assets'
+import { useNavigate } from 'react-router-dom'
+import { useContext } from 'react'
+import { StoreContext } from '../../StoreContext/StoreContex'
 
 const Footer = () => {
+
+    const { category, setCategory, title, setTitle, model, setModel, openMenu, setOpenMenu } = useContext(StoreContext);
+
+    const navigate = useNavigate();
+
+    const handleMenuItemClick = (item) => {
+        setCategory(item.category);
+        setTitle(item.name);
+        setModel("");
+        navigate("/");
+      };
+
   return (
     <div className='footer'>
         <img id='footer-logo' src={assets.logo} alt="" />
         <div className="footer-menu-list">
             <ul>
                 {menu_list.map((item,index)=>{
-                    return <li key={index}>{item.name}</li>
+                    return <li onClick={()=>handleMenuItemClick(item)} key={index}>{item.name}</li>
                 })}
             </ul>
         </div>

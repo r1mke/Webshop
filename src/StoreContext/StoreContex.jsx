@@ -4,7 +4,7 @@ import { mobile_list } from "../assets/assets";
 export const StoreContext = createContext(null);
 
 export const StoreContexProvider = (props) => {
-  const [category, setCategory] = useState("All");
+  const [category, setCategory] = useState("phone");
 
   const [title, setTitle] = useState("Mobile Phones");
 
